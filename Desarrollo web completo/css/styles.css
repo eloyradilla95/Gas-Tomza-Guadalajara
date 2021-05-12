@@ -1,3 +1,15 @@
+/*Paleta de colores css */
+/*las palabras seguidas de : son elementos que no
+  existen en el html pero se pueden utilizar para 
+  guardar variables, se les conocen como custom properties
+   */
+:root{
+    --blanco: #ffffff;
+    --negro: #212121;
+    --primario: #ff9100;
+    
+}
+
 html{
     font-size: 62.5%;
 }
