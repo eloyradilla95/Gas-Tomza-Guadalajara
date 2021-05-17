@@ -6,10 +6,10 @@
 :root{
     --blanco: #ffffff;
     --negro: #212121;
-    --primario: #ff9100;
+    --primario: #0400ffef;
     
 }
-
+ 
 html{
     font-size: 62.5%;
 }
