@@ -5,25 +5,63 @@
    */
 :root{
     --blanco: #ffffff;
-    --negro: #212121;
-    --primario: #0400ffef;
+    --oscuro: #212121;
+    --primario: #e61111ef;
+    --secundario: #ff8800ef;
+    --gris: #757575;
     
 }
  
 html{
     font-size: 62.5%;
 }
-
+/* 1rem = 10px la configuración en las etiquetas html y body
+   nos ayudan a que los rems se adapten mejor a la resolución 
+   de la pantalla en la que se visualiza nuestra página
+*/
 body{
     font-size: 16px;
+    font-family: 'Newsreader', serif; /* fuente principal del proyecto*/
 }
 
 .titulo{
     text-align: center;
     font-size: 3.8rem;
-    
+    color: var(--oscuro);   
 }
 
 .titulo span{
     font-size: 2rem;
+}
+
+.contenedor{
+    width:  120rem;
+    margin: 0 auto;
+}
+
+.nav-bg{
+
+    background-color: var(--primario);
+}
+
+.navegacion-principal{
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navegacion-principal a{
+
+    padding: 1rem;
+    color:var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navegacion-principal a:hover{
+
+    background-color: var(--secundario);
+    color: var(--oscuro);
+
 }
