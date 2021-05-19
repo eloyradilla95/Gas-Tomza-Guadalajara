@@ -27,15 +27,24 @@ body{
 .titulo{
     text-align: center;
     font-size: 3.8rem;
-    color: var(--oscuro);   
+    color: var(--oscuro);  
+    
 }
 
 .titulo span{
+    display: block; 
     font-size: 2rem;
 }
 
+@media (min-width: 768px) {
+    
+}
+
 .contenedor{
-    width:  120rem;
+    /*max-width toma el rango como maximo y solo si esta
+      disponible, si no toma el 100% que se toma por defecto
+     */
+    max-width:  120rem; 
     margin: 0 auto;
 }
 
@@ -47,11 +56,30 @@ body{
 .navegacion-principal{
 
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
 }
+
+/*480 es la medida para la resolución de un télefono*/
+@media (min-width: 480px) {
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-evenly;
+        /*Para alinear horizontalmente se utiliza justify content*/
+    }
+}
+/*768 es la medida para la resolución de una tablet*/
+@media (min-width: 768px) {
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
 
 .navegacion-principal a{
 
+    display: block;
+    text-align: center;
     padding: 1rem;
     color:var(--blanco);
     text-decoration: none;
@@ -65,3 +93,4 @@ body{
     color: var(--oscuro);
 
 }
+
