@@ -6,14 +6,23 @@
 :root{
     --blanco: #ffffff;
     --oscuro: #212121;
-    --primario: #e61111ef;
-    --secundario: #ff8800ef;
-    --gris: #757575;
+    --primario: rgb(241,241,241); /*Brilliant White*/
+    --secundario: rgb(255,132,14); /*Turmeric*/
+    --gris: rgb(97,91,91); /*Plum Kitten*/
+    --solar: rbg(244,191,59); /*Solar Power*/
+    --shocking: rgb(254,109,42); /*Shocking Orange*/
+    --flame: rgb(254,116,0); /*Flame orange*/
     
 }
- 
+
+/*Configuraciones globales*/
+
 html{
     font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 /* 1rem = 10px la configuración en las etiquetas html y body
    nos ayudan a que los rems se adapten mejor a la resolución 
@@ -22,21 +31,7 @@ html{
 body{
     font-size: 16px;
     font-family: 'Newsreader', serif; /* fuente principal del proyecto*/
-}
-
-.titulo{
-    text-align: center;
-    font-size: 3.8rem;
-    color: var(--oscuro);  
-    
-}
-
-.titulo span{
-    display: block; 
-    font-size: 2rem;
-}
-
-@media (min-width: 768px) {
+    background-image: linear-gradient(to top,var(--shocking) 0%, var(--secundario) 100%);
     
 }
 
@@ -47,6 +42,72 @@ body{
     max-width:  120rem; 
     margin: 0 auto;
 }
+
+.boton /*Diseño de los botones*/{
+    background-color: var(--primario);
+    color: var(--oscuro);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;  
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 80%;
+    text-align: center;
+}
+
+.sombra{
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(107,107,107,0.56);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(107,107,107,0.56);
+    box-shadow: 0px 5px 15px 0px rgba(107,107,107,0.56);
+    background-color: var(--gris);
+    padding: 2rem;
+    border-radius: 1rem;
+    /*border-radius nos sirve para aplicar esquinas redondeadas */
+}
+
+@media (min-width: 480px) {
+    .boton{
+        width:auto;
+    }
+}
+
+/*Tipografia*/
+
+h1{
+    font-size: 3.8rem;
+}
+
+h2{
+    font-size: 2.8rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+h1,h2,h3 {
+    text-align: center;
+}
+
+.info-zona/*parrafo que sigue del h1*/{
+    display: block;
+    font-size: 2.8rem;
+}
+
+/*header*/
+
+.logo{
+
+  display: grid;
+  /*cuando utilizamos grid solo la primera parte son los rows
+    y la segunda las columns.
+    los rows es el espacio vertical y las columns en horizontal*/
+  grid: 50px 50px 50px / repeat(3,1fr);
+}
+
+/*barra de navegacion*/
 
 .nav-bg{
 
@@ -81,7 +142,7 @@ body{
     display: block;
     text-align: center;
     padding: 1rem;
-    color:var(--blanco);
+    color:var(--flame);
     text-decoration: none;
     font-size: 2rem;
     font-weight: bold;
@@ -90,7 +151,39 @@ body{
 .navegacion-principal a:hover{
 
     background-color: var(--secundario);
-    color: var(--oscuro);
+    color: var(--primario);
 
 }
+
+/*Imagen de fondo e informacion*/
+
+.info{
+
+    background-image: url(../img/laja.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;  
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.contenido-info{
+
+   position: absolute;
+   background-color: rgba(0,0,0,.5); /*transparencia de la imagen de fondo*/
+   width: 100%;
+   height: 100%;
+   /*Alinear un texto en medio y al centro*/
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   color: var(--primario);
+
+}
+
+
+
+
+
 
