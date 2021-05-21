@@ -31,7 +31,8 @@ html{
 body{
     font-size: 16px;
     font-family: 'Newsreader', serif; /* fuente principal del proyecto*/
-    background-image: linear-gradient(to top,var(--shocking) 0%, var(--secundario) 100%);
+    /*background-image: linear-gradient(to top,var(--shocking) 0%, var(--secundario) 100%);*/
+    background-color: var(--flame);
     
 }
 
@@ -43,12 +44,26 @@ body{
     margin: 0 auto;
 }
 
+.contenedor-map{
+    max-width:  120rem; 
+    margin: 0 5.5rem;
+    padding: 2rem ;
+    
+}
+
+.titulo-estaciones{
+    font-size: 18px;
+    color: var(--secundario);
+    background-color: var(--primario);
+    text-align: center;
+}
+
 .boton /*Diseño de los botones*/{
     background-color: var(--primario);
     color: var(--oscuro);
     padding: 1rem 3rem;
-    margin-top: 1rem;
-    font-size: 2rem;
+    margin-top: .5rem;
+    font-size: 1.5rem;
     text-decoration: none;
     text-transform: uppercase;  
     font-weight: bold;
@@ -61,10 +76,21 @@ body{
     -webkit-box-shadow: 0px 5px 15px 0px rgba(107,107,107,0.56);
     -moz-box-shadow: 0px 5px 15px 0px rgba(107,107,107,0.56);
     box-shadow: 0px 5px 15px 0px rgba(107,107,107,0.56);
-    background-color: var(--gris);
+    background-color: var(--primario);
     padding: 2rem;
+    margin: 2rem, 2rem;
     border-radius: 1rem;
     /*border-radius nos sirve para aplicar esquinas redondeadas */
+}
+
+.sombra-contacto{
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(107,107,107,0.56);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(107,107,107,0.56);
+    box-shadow: 0px 5px 15px 0px rgba(107,107,107,0.56);
+    background-color: var(--primario);
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 1rem;
 }
 
 @media (min-width: 480px) {
@@ -98,13 +124,15 @@ h1,h2,h3 {
 
 /*header*/
 
-.logo{
+.logo /*clase para manejar el grid*/{
 
   display: grid;
   /*cuando utilizamos grid solo la primera parte son los rows
     y la segunda las columns.
     los rows es el espacio vertical y las columns en horizontal*/
-  grid: 50px 50px 50px / repeat(3,1fr);
+    /*grid-template-columns: ; nos divide en horizontal*/
+    /*grid-template-rows: ; nos divide en vertical*/
+    grid: 1fr / repeat(3,1fr);
 }
 
 /*barra de navegacion*/
@@ -180,6 +208,13 @@ h1,h2,h3 {
    justify-content: center;
    color: var(--primario);
 
+}
+
+/*Servicios*/
+
+.servicios{
+    display: grid;
+    grid: 1fr / repeat(3,1fr);
 }
 
 
