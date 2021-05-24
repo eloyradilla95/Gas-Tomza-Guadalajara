@@ -51,12 +51,12 @@ body{
     
 }
 
-.titulo-estaciones{
-    font-size: 18px;
-    color: var(--secundario);
-    background-color: var(--primario);
-    text-align: center;
+@media (min-width: 768px) {
+    .contenedor-map{
+
+    }
 }
+
 
 .boton /*Diseño de los botones*/{
     background-color: var(--primario);
@@ -135,6 +135,12 @@ h1,h2,h3 {
     grid: 1fr / repeat(3,1fr);
 }
 
+.logo-tomza{
+
+    text-align:center;
+}
+
+
 /*barra de navegacion*/
 
 .nav-bg{
@@ -212,9 +218,18 @@ h1,h2,h3 {
 
 /*Servicios*/
 
+.titulo-estaciones{
+    font-size: 18px;
+    color: var(--secundario);
+    background-color: var(--primario);
+    text-align: center;
+}
+
 .servicios{
     display: grid;
     grid: 1fr / repeat(3,1fr);
+    text-align: center;
+    background-color: var(--gris);
 }
 
 
