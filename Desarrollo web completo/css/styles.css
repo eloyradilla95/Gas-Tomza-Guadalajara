@@ -20,7 +20,17 @@
 html{
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-snap-type: y mandatory;
 }
+
+/*
+.nav-bg, .servicios , .titulo-estaciones, .sombra-contacto {
+ 
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+*/
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -41,13 +51,16 @@ body{
       disponible, si no toma el 100% que se toma por defecto
      */
     max-width:  120rem; 
-    margin: 0 auto;
+    margin: 2rem auto;
+    overflow: hidden;
 }
 
+/*
 .contenedor-map{
     max-width:  120rem; 
     margin: 0 5.5rem;
     padding: 2rem ;
+    
     
 }
 
@@ -56,7 +69,7 @@ body{
 
     }
 }
-
+*/
 
 .boton /*Diseño de los botones*/{
     background-color: var(--primario);
@@ -89,7 +102,7 @@ body{
     box-shadow: 0px 5px 15px 0px rgba(107,107,107,0.56);
     background-color: var(--primario);
     padding: 2rem;
-    margin: 2rem auto;
+    margin: rem auto;
     border-radius: 1rem;
 }
 
@@ -230,6 +243,9 @@ h1,h2,h3 {
     grid: 1fr / repeat(3,1fr);
     text-align: center;
     background-color: var(--gris);
+    column-gap: 2rem;
+    margin: 2rem, 2rem;
+    overflow: hidden; /*Nos sirve para que no sobrepase la pantalla*/
 }
 
 

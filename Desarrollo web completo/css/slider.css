@@ -1,0 +1,36 @@
+:root{
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: rgb(241,241,241); /*Brilliant White*/
+    --secundario: rgb(255,132,14); /*Turmeric*/
+    --gris: rgb(97,91,91); /*Plum Kitten*/
+    --solar: rbg(244,191,59); /*Solar Power*/
+    --shocking: rgb(254,109,42); /*Shocking Orange*/
+    --flame: rgb(254,116,0); /*Flame orange*/
+    
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Newsreader', serif; /* fuente principal del proyecto*/
+    /*background-image: linear-gradient(to top,var(--shocking) 0%, var(--secundario) 100%);*/
+    background-color: var(--flame);
+    
+}
+
+.slider-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
