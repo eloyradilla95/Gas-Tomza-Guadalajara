@@ -95,27 +95,6 @@ body{
     }
 }
 
-.sombra{
-    -webkit-box-shadow: 0px 5px 15px 0px rgba(107,107,107,0.56);
-    -moz-box-shadow: 0px 5px 15px 0px rgba(107,107,107,0.56);
-    box-shadow: 0px 5px 15px 0px rgba(107,107,107,0.56);
-    background-color: var(--primario);
-    padding: 2rem;
-    margin: 2rem, 2rem;
-    border-radius: 1rem;
-    /*border-radius nos sirve para aplicar esquinas redondeadas */
-}
-
-.sombra-contacto{
-    -webkit-box-shadow: 0px 5px 15px 0px rgba(107,107,107,0.56);
-    -moz-box-shadow: 0px 5px 15px 0px rgba(107,107,107,0.56);
-    box-shadow: 0px 5px 15px 0px rgba(107,107,107,0.56);
-    background-color: var(--primario);
-    padding: 2rem;
-    margin: rem auto;
-    border-radius: 1rem;
-}
-
 /*Tipografia*/
 
 h1{
@@ -170,6 +149,7 @@ h1,h2,h3 {
 .logo-tomza{
 
     text-align:center;
+    max-width: 100%;
 }
 
 
@@ -224,26 +204,46 @@ h1,h2,h3 {
 
 .servicios{
     display: grid;
-    grid-auto-rows: 100%;
+    grid-column: 350px;
+    grid-row: 250px;
     text-align: center;
     background-color: var(--gris);
     color: var(--primario);
-    column-gap: 2rem;
-    margin: 0 auto;
+    gap: 1rem;
+    margin: 0 1rem;
     border-radius: 1rem;
     overflow: hidden; /*Nos sirve para que no sobrepase la pantalla*/
 }
 
 @media (min-width: 480px) {
     .servicios{
-        grid: 2fr / repeat(3,1fr);
+        grid-template-columns: 350px;
+        grid-template-rows: 250px;
+        grid: 1fr / repeat(3,1fr);
+        margin: 0 1rem;
     }
 }
 
 @media (min-width: 768px) {
     .servicios{
-        grid: 2fr / repeat(3,1fr);
+        grid: 1fr / repeat(3,1fr);
+        margin: 0 1rem;
     }
+}
+
+.servicios img{
+    max-width: 100%;
+}
+
+.sombra{
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(107,107,107,0.56);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(107,107,107,0.56);
+    box-shadow: 0px 5px 15px 0px rgba(107,107,107,0.56);
+    background-color: var(--primario);
+    padding: 1rem;
+    margin: 2rem, 2rem;
+    border-radius: 1rem;
+    /*border-radius nos sirve para aplicar esquinas redondeadas */
 }
 
 /*Estaciones*/
@@ -322,6 +322,30 @@ h1,h2,h3 {
    justify-content: center;
    color: var(--primario);
 
+}
+
+/*Mapa*/
+
+.titulo-map{
+    
+}
+.maps{
+    max-width: 1200px;
+}
+.map{
+    width: 100%;
+}
+
+/*Contacto*/
+
+.sombra-contacto{
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(107,107,107,0.56);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(107,107,107,0.56);
+    box-shadow: 0px 5px 15px 0px rgba(107,107,107,0.56);
+    background-color: var(--primario);
+    padding: 2rem;
+    margin: 1rem auto;
+    border-radius: 1rem;
 }
 
 /*footer*/
