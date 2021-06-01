@@ -9,7 +9,7 @@
     --primario: rgb(241,241,241); /*Brilliant White*/
     --secundario: rgb(255,132,14); /*Turmeric*/
     --gris: rgb(97,91,91); /*Plum Kitten*/
-    --solar: rbg(244,191,59); /*Solar Power*/
+    --solar: #f4bf3b; /*Solar Power*/
     --shocking: rgb(254,109,42); /*Shocking Orange*/
     --flame: rgb(254,116,0); /*Flame orange*/
     
@@ -264,23 +264,45 @@ h1,h2,h3 {
     grid-auto-rows: 250px;  
 }
 
+.estaciones-guadalajara{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
 @media (min-width: 480px) {
-    .estaciones{
-        grid-auto-columns: 350px;
-        grid-auto-rows: 250px; 
-        justify-items: center;
+    .estaciones-guadalajara{
+        
+        grid-template-rows: repeat(4,1fr);
     }
 }
 
 @media (min-width: 768px) {
-    .estaciones{
+    .estaciones-guadalajara{
         grid-template-columns: repeat(2,50%);
         grid-row: repeat(3,1fr);
     }
 }
 
 @media (min-width: 1040px) {
-    .estaciones{
+    .estaciones-guadalajara{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+}
+
+.estaciones-zapopan{
+    grid-template-rows: repeat(8,1fr);
+}
+
+@media (min-width: 768px) {
+    .estaciones-zapopan{
+        grid-template-columns: repeat(2,50%);
+        grid-row: repeat(3,1fr);
+    }
+}
+
+@media (min-width: 1040px) {
+    .estaciones-zapopan{
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(3,1fr);
     }
@@ -347,6 +369,24 @@ h1,h2,h3 {
     padding: 2rem;
     margin: 1rem auto;
     border-radius: 1rem;
+}
+
+.contacto{
+
+}
+
+.contacto fieldset{
+    border: none;
+
+}
+
+.contenedor legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    
 }
 
 /*footer*/
