@@ -11,7 +11,6 @@ $mensaje = $_POST['mensaje'];
 $header = "Mensaje enviado desde la página de tomza jalisco";
 $mensajecompleto = $nombre . "\n" . $telefono . "\n" . $correo . "\n" . $mensaje;
 
-mail($destinario, $asunto, $header, $mensajecompleto );
+@mail($destinario, $asunto, $header, $mensajecompleto );
 echo "<script>alert('Correo enviado exitosamente')</script>";
-echo "<script> setTimeout(\"location.href='index.html'\",1000)</script>";
 ?>
