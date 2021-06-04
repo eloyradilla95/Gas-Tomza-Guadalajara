@@ -372,28 +372,28 @@
  <section>
     <h2>Contacto</h2>
 
-     <form class="contacto">
+     <form class="contacto" action="correo.php" method="POST">
          <fieldset>
             <legend>Contactanos </legend>
             <div class="contenedor-campos">
               <div class="campo">
                   <label>Nombre</label>
-                  <input class="input" type="text" placeholder="Nombre">  
+                  <input class="input" type="text" placeholder="Nombre" name="nombre" required>  
               </div>
 
               <div class="campo">
                   <label>Telefono</label>
-                  <input class="input" type="tel" placeholder="Telefono">
+                  <input class="input" type="tel" placeholder="Telefono" name="telefono" required>
               </div>  
 
               <div class="campo">
                   <label>Correo</label>
-                  <input class="input" type="email" placeholder="Correo">
+                  <input class="input" type="email" placeholder="Correo" name="correo" required>
               </div>
 
               <div class="campo">
                   <label>Mensaje</label>
-                  <textarea class="input"></textarea> 
+                  <textarea class="input" name="mensaje" required></textarea> 
               </div>
             </div> <!--.contenedor-campos-->
             <div class="enviar-flex">

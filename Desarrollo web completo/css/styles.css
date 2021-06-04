@@ -423,8 +423,9 @@ h1,h2,h3 {
     display: block;
 }
 
-.campos textarea{
-    height: 30rem;
+.campo textarea{
+    height: 20rem;
+    resize: none;
 }
 
 .input{
