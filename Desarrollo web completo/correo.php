@@ -1,16 +1,27 @@
 <?php
-$destinario = 'JPerez.N@tomza.com';
-$asunto = 'Contacto página web jalisco';
-//correo al que llegara el mensaje
 $nombre = $_POST['nombre'];
 $telefono = $_POST['telefono'];
 $correo = $_POST['correo'];
 $mensaje = $_POST['mensaje'];
 
+$header = 'From: ' . $correo . "\r\n";
+$header .= "X-Mailer: PHP/" . phpversion(). "\r\n";
+$header .= "Mime-Version: 1.0 \r\n";
+$header .= "Content-Type: text/plain";
 
-$header = "Mensaje enviado desde la página de tomza jalisco";
-$mensajecompleto = $nombre . "\n" . $telefono . "\n" . $correo . "\n" . $mensaje;
+$mensaje = "Este mensaje fue enviado por " . $nombre . ",\r\n";
+$mensaje .= "Su correo es: " . $correo . " \r\n";
+$mensaje .= "Telefono :" . $telefono . " \r\n";
+$mensaje .= "Mensaje: " . $_POST['mensaje'] . "\r\n";
+$mensaje .= "Enviado el " . date('d/m/Y', time());
 
-@mail($destinario, $asunto, $header, $mensajecompleto );
-echo "<script>alert('Correo enviado exitosamente')</script>";
+$destinario = 'JPerez.N@tomza.com';
+$asunto = 'Contacto página web jalisco';
+
+mail($destinario, $asunto, utf8_decode($mensaje), $header);
+
+header("Location:index.html");
+
 ?>
+
+
