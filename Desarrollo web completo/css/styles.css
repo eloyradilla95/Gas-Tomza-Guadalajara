@@ -69,8 +69,7 @@ body{
     border: 2px solid var(--flame);
     width: 80%;
     text-align: center;
-    -webkit-transition-duration: 1.4s;
-    transition-duration: 1.4s;
+    transition: background-color 1s ease-in-out;
 
     
     
