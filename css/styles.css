@@ -249,6 +249,20 @@ h1,h2,h3 {
 
 /*Estaciones*/
 
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    background-color: var(--primario);
+}
+
+@media (max-width: 480px) {
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
 .titulo-estaciones{
     font-size: 18px;
     color: var(--secundario);
@@ -265,49 +279,13 @@ h1,h2,h3 {
     grid-auto-rows: 250px;  
 }
 
-.estaciones-guadalajara{
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
-}
 
-@media (min-width: 480px) {
-    .estaciones-guadalajara{
-        
-        grid-template-rows: repeat(4,1fr);
-    }
-}
 
-@media (min-width: 768px) {
-    .estaciones-guadalajara{
-        grid-template-columns: repeat(2,50%);
-        grid-row: repeat(3,1fr);
-    }
-}
 
-@media (min-width: 1040px) {
-    .estaciones-guadalajara{
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(3,1fr);
-    }
-}
 
-.estaciones-zapopan{
-    grid-template-rows: repeat(8,1fr);
-}
 
-@media (min-width: 768px) {
-    .estaciones-zapopan{
-        grid-template-columns: repeat(2,50%);
-        grid-row: repeat(3,1fr);
-    }
-}
 
-@media (min-width: 1040px) {
-    .estaciones-zapopan{
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(3,1fr);
-    }
-}
+
 
 .estaciones img{
 
