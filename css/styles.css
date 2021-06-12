@@ -255,13 +255,6 @@ h1,h2,h3 {
     background-color: var(--primario);
 }
 
-@media (max-width: 480px) {
-    .grid{
-        grid-template-columns: 1fr;
-    }
-}
-
-
 
 .titulo-estaciones{
     font-size: 18px;
