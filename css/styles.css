@@ -13,6 +13,8 @@
     --shocking: rgb(254,109,42); /*Shocking Orange*/
     --flame: rgb(254,116,0); /*Flame orange*/
     
+    --fuentebold: myriad-pro,sans-serif;
+    --fuentelight: 'Ginora Sans', sans-serif;
 }
 
 /*Configuraciones globales*/
@@ -38,9 +40,12 @@ html{
    nos ayudan a que los rems se adapten mejor a la resolución 
    de la pantalla en la que se visualiza nuestra página
 */
+
+/**Globales **/
 body{
     font-size: 16px;
-    font-family: 'Newsreader', serif; /* fuente principal del proyecto*/
+    line-height: 1.5;;
+    font-family: var(--fuentelight); /* fuente principal del proyecto*/
     /*background-image: linear-gradient(to top,var(--shocking) 0%, var(--secundario) 100%);*/
     background-color: var(--flame);
     
@@ -89,6 +94,9 @@ body{
     }
 }
 
+a{
+    text-decoration: none;
+}
 /*Tipografia*/
 
 h1{
@@ -201,7 +209,7 @@ h1,h2,h3 {
     color:var(--flame);
     text-decoration: none;
     font-size: 2rem;
-    font-weight: bold;
+    font-family: var(--fuentebold);
 }
 
 .navegacion-principal a:hover{
