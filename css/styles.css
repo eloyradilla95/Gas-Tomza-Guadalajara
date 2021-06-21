@@ -346,11 +346,9 @@ h1,h2,h3 {
 
 .estaciones__imagen:hover{
     
-    
     transform: scale(1.2);
     
 }
-
 
 .estaciones__informacion{
   margin: 1rem 0;
