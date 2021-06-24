@@ -248,6 +248,34 @@ h1,h2,h3 {
     overflow: hidden; /*Nos sirve para que no sobrepase la pantalla*/
 }
 
+.servicios-h{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    text-align: center;
+    gap: 1rem;
+    margin: 0 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.servicios-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicios-titulo{
+    font-family: var(--fuentebold);
+    font-size: 3rem;
+}
+
+.servicios-descripcion{
+    font-family: var(--fuentelight);
+    font-size: 2.2rem;
+}
+
+
 @media (min-width: 480px) {
     .servicios{
         grid-template-columns: 1fr ;
@@ -377,7 +405,7 @@ h1,h2,h3 {
     background-image: url(../img/laja.JPG);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 450px;  
+    height: 600px;  
     position: relative;
     margin-bottom: 2rem;
 }
@@ -404,9 +432,6 @@ h1,h2,h3 {
 
 /*Mapa*/
 
-.titulo-map{
-    
-}
 .maps{
     max-width: 1200px;
 }
@@ -553,7 +578,7 @@ h1,h2,h3 {
 
 .contenedor-redes{
     position: fixed;
-    bottom: 20px;
+    bottom: 80px;
     right: 20px;
     display: flex;
     flex-direction: column;
@@ -567,9 +592,9 @@ h1,h2,h3 {
 .contenedor-redes img{
     width: 50px;
     padding: 4px;
-    background: rgba(0,0,0,0.0);
+    background: rgba(0,0,0,0);
     cursor: pointer;
-    border-radius: 10%;
+    border-radius: 50%;
     transition: all 300ms;
 }
 
