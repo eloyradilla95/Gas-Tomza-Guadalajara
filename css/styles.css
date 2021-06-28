@@ -14,7 +14,7 @@
     --flame: rgb(254,116,0); /*Flame orange*/
     
     --fuentebold: myriad-pro,sans-serif;
-    --fuentelight: 'Ginora Sans', sans-serif;
+    --fuentelight: 'Montserrat', sans-serif;
 }
 
 /*Configuraciones globales*/
@@ -112,7 +112,7 @@ h3{
 
 h1,h2,h3 {
     text-align: center;
-    
+    font-family: var(--fuentelight);
 }
 
 
