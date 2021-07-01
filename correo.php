@@ -18,7 +18,7 @@ $mensaje .= "Enviado el " . date('d/m/Y', time());
 $destinario = 'jperez.n@tomza.com';
 $asunto = 'Contacto página web jalisco';
 
-@mail($destinario, $asunto, utf8_decode($mensaje), $header);
+mail($destinario, $asunto, utf8_decode($mensaje), $header);
 
 header("Location:index.html");
 
