@@ -407,7 +407,7 @@ h1,h2,h3 {
     background-image: url(/img/Est/fondo-pipas.JPG);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;  
+    height: 800px;  
     position: relative;
     margin-bottom: 2rem;
 }
@@ -415,6 +415,8 @@ h1,h2,h3 {
 .info-zona/*parrafo que sigue del h1*/{
     display: block;
     font-size: 2.8rem;
+    max-width: 90%;
+    
 }
 
 .contenido-info{
@@ -430,6 +432,12 @@ h1,h2,h3 {
    justify-content: center;
    color: var(--primario);
 
+}
+
+.contenedor-info{
+    max-width: 100%;
+    margin: 2rem 2rem;
+    overflow: hidden;
 }
 
 /*Mapa*/
