@@ -405,9 +405,10 @@ h1,h2,h3 {
 .info{
 
     background-image: url(/img/Est/fondo-pipas.JPG);
-    background-repeat: no-repeat;
+    height: 800px; 
     background-size: cover;
-    height: 800px;  
+    background-repeat: no-repeat;
+    background-position: center center;/*Centrar la imagen*/
     position: relative;
     margin-bottom: 2rem;
 }
