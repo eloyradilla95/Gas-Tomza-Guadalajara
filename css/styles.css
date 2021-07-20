@@ -242,7 +242,7 @@ h1,h2,h3 {
     grid-template-columns: 1fr;
     text-align: center;
     background-color: var(--gris);
-    color: var(--primario);
+    color: var(--secundario);
     gap: 2rem;
     margin: 0 1rem;
     border-radius: 1rem;
