@@ -2,12 +2,11 @@
     --blanco: #ffffff;
     --oscuro: #212121;
     --primario: rgb(241,241,241); /*Brilliant White*/
-    --secundario: rgb(255,132,14); /*Turmeric*/
+    --secundario: rgb(183,17,29); /*Turmeric*/
     --gris: rgb(97,91,91); /*Plum Kitten*/
-    --solar: rbg(244,191,59); /*Solar Power*/
-    --shocking: rgb(254,109,42); /*Shocking Orange*/
-    --flame: rgb(254,116,0); /*Flame orange*/
-    
+    --solar: #f4bf3b; /*Solar Power*/
+    --shocking: rgb(183,17,29); /*Shocking Orange*/
+    --flame: rgb(183,17,29); /*Flame orange*/
 }
 
 html{

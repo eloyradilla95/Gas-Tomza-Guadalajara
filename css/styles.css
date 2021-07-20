@@ -47,7 +47,7 @@ body{
     line-height: 1.5;;
     font-family: var(--fuentelight); /* fuente principal del proyecto*/
     /*background-image: linear-gradient(to top,var(--shocking) 0%, var(--secundario) 100%);*/
-    background-color: var(--secundario);
+    background-color: var(--secundario)
     
 }
 
@@ -241,12 +241,19 @@ h1,h2,h3 {
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
-    background-color: var(--gris);
-    color: var(--secundario);
+    background-color: var(--primario);
+    color: var(--oscuro);
     gap: 2rem;
     margin: 0 1rem;
     border-radius: 1rem;
     overflow: hidden; /*Nos sirve para que no sobrepase la pantalla*/
+}
+
+.servicios-encabezado{
+    font-family: var(--fuentebold);
+    font-size: 5rem;
+    text-align: center;
+    color: var(--oscuro);
 }
 
 .servicios-h{
@@ -268,6 +275,7 @@ h1,h2,h3 {
 .servicios-titulo{
     font-family: var(--fuentebold);
     font-size: 3rem;
+    color: var(--oscuro);
 }
 
 .servicios-descripcion{
@@ -351,10 +359,10 @@ h1,h2,h3 {
 
 .titulo-ubicacion{
     font-size: 18px;
-    color: var(--primario);
-    background-color: var(--gris);
+    color: var(--secundario);
+    background-color: var(--primario);
     text-align: center;
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: bold;
     padding: 1rem;
     border-radius: 1rem;
