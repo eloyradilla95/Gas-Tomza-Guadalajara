@@ -7,11 +7,11 @@
     --blanco: #ffffff;
     --oscuro: #212121;
     --primario: rgb(241,241,241); /*Brilliant White*/
-    --secundario: rgb(255,132,14); /*Turmeric*/
+    --secundario: rgb(183,17,29); /*Turmeric*/
     --gris: rgb(97,91,91); /*Plum Kitten*/
     --solar: #f4bf3b; /*Solar Power*/
-    --shocking: rgb(254,109,42); /*Shocking Orange*/
-    --flame: rgb(254,116,0); /*Flame orange*/
+    --shocking: rgb(183,17,29); /*Shocking Orange*/
+    --flame: rgb(183,17,29); /*Flame orange*/
     
     --fuentebold: myriad-pro,sans-serif;
     --fuentelight: 'Montserrat', sans-serif;
@@ -47,7 +47,7 @@ body{
     line-height: 1.5;;
     font-family: var(--fuentelight); /* fuente principal del proyecto*/
     /*background-image: linear-gradient(to top,var(--shocking) 0%, var(--secundario) 100%);*/
-    background-color: var(--flame);
+    background-color: var(--secundario);
     
 }
 
