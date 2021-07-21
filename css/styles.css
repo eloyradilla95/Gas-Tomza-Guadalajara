@@ -92,7 +92,7 @@ body{
     }
 }
 
-a{
+a,p{
     font-family: var(--fuentelight);
     text-decoration: none;
 }
@@ -469,7 +469,12 @@ h1,h2,h3 {
     margin: 1rem auto;
     border-radius: 1rem;
 }
-
+.sub-contacto{
+    font-family: var(--fuentebold);
+    font-size: 3rem;
+    text-align: center;
+    color: var(--primario);
+}
 .contacto{
     background-color: var(--flame);
     margin: 0 auto;
