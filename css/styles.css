@@ -603,7 +603,7 @@ h1,h2,h3 {
 .contenedor-redes{
     position: fixed;
     bottom: 60px;
-    right: 20px;
+    right: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
