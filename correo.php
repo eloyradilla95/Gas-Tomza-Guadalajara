@@ -15,12 +15,12 @@ $mensaje .= "Telefono :" . $telefono . " \r\n";
 $mensaje .= "Mensaje: " . $_POST['mensaje'] . "\r\n";
 $mensaje .= "Enviado el " . date('d/m/Y', time());
 
-$destinario = 'soportesistemas.jalisco@tomza.com';
+$destinario = 'eoy0907@gmail.com';
 $asunto = 'Contacto página web jalisco';
 
 mail($destinario, $asunto, utf8_decode($mensaje), $header);
 
-header("Location:index.html");
+header("Location:/");
 
 ?>
 
