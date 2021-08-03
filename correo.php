@@ -15,7 +15,7 @@ $mensaje .= "Telefono :" . $telefono . " \r\n";
 $mensaje .= "Mensaje: " . $_POST['mensaje'] . "\r\n";
 $mensaje .= "Enviado el " . date('d/m/Y', time());
 
-$destinario = 'jperez.n@tomza.com';
+$destinario = 'soportesistemas.jalisco@tomza.com';
 $asunto = 'Contacto página web jalisco';
 
 mail($destinario, $asunto, utf8_decode($mensaje), $header);
