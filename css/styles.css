@@ -198,23 +198,8 @@ h1,h2,h3 {
 .navegacion-principal{
 
     display: flex;
-    flex-direction: column;
-}
-
-/*480 es la medida para la resolución de un télefono*/
-@media (min-width: 480px) {
-    .navegacion-principal{
-        flex-direction: row;
-        justify-content: space-evenly;
-        /*Para alinear horizontalmente se utiliza justify content*/
-    }
-}
-/*768 es la medida para la resolución de una tablet*/
-@media (min-width: 768px) {
-    .navegacion-principal{
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .navegacion-principal a{
