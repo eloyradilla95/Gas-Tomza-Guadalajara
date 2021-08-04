@@ -19,8 +19,10 @@ $to = 'soportesistemas.jalisco@tomza.com';
 $subject = 'Contacto página web jalisco';
 
 mail($to, $subject, utf8_decode($message), $header);
-
-header("Location:/");
+echo'<script type="text/javascript">
+        alert("Mensaje enviado");
+        window.location.href="/";
+        </script>';
 
 ?>
 
