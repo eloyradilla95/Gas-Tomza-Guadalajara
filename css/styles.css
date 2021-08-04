@@ -406,11 +406,22 @@ h1,h2,h3 {
     margin-bottom: 2rem;
 }
 
-.info-zona/*parrafo que sigue del h1*/{
+/*parrafo siguente del h1*/
+.info-zona{
     display: block;
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     max-width: 90%;
     
+}
+@media (min-width: 480px) {
+    .info-zona{
+        font-size: 2.8rem;
+    }
+}
+@media (min-width: 1080px) {
+    .info-zona{
+        font-size: 4rem;
+    }
 }
 
 .contenido-info{
@@ -573,11 +584,17 @@ h1,h2,h3 {
     }
 }
 
+/**Aviso de privacidad**/
 .aviso{
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: justify;
     text-justify: inter-word;
     padding: 3rem;
+}
+@media (min-width: 480px) {
+    .aviso{
+      font-size: 3rem;
+    }
 }
 .eradilla{
     color: var(--primario);
