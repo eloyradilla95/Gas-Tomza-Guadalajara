@@ -13,8 +13,8 @@ $message .= "Telefono :" . $telefono . " \r\n";
 $message .= "Mensaje: " . $_POST['mensaje'] . "\r\n";
 $message .= "Enviado el " . date('d/m/Y', time());
 
-$to = 'eoy0907@gmail.com';
-$subject = 'Contacto página web jalisco';
+$to = "soportesistema.jalisco@tomza.com";
+$subject = "Contacto página web jalisco";
 
 mail($to, $subject, $message, $header);
 echo'<script type="text/javascript">
