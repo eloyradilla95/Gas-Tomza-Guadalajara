@@ -118,47 +118,40 @@ h1,h2,h3 {
 
 /*header*/
 
-.logo /*clase para manejar el grid*/{
+.logo{
 
-  display: grid;
-  /*cuando utilizamos grid solo la primera parte son los rows
-    y la segunda las columns.
-    los rows es el espacio vertical y las columns en horizontal*/
-    /*grid-template-columns: ; nos divide en horizontal*/
-    /*grid-template-rows: ; nos divide en vertical*/
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
 }
 
 
 @media (max-width: 480px) {
     .logo-T{
-        grid-column: 1/3;
-        grid-row: 1/1;
+        width: 80%;    
     }
-
 }
 
 @media (min-width: 480px) {
     .logo{
-
-        width: 100%;
-        margin: 0 auto;
-        grid: 1fr / repeat(3,1fr);
-        
-    }
-    
-
+        width: 80%;
+        margin: 0 auto;      
+    }  
 }
 
 @media (min-width: 768px) {
     .logo{
-        width: 100%;
-        margin: 0 auto;
-        grid: 1fr / repeat(3,1fr);
+        width: 35%;
+        margin: 0 auto;   
     }
-    
-
+}
+@media (min-width: 1280px) {
+    .logo{
+        width: 40%;
+        margin: 0 auto;
+    }
 }
 
 .logo-tomza{
@@ -173,18 +166,6 @@ h1,h2,h3 {
     align-items: center;
     justify-content: center;
     max-width: 100%;
-}
-
-.llamadas{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-} 
-
-.llamadas a{
-    font-size: 2.2rem;
 }
 
 
