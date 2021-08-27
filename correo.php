@@ -1,27 +1,5 @@
 <?php
-
-include("Mailer/src/PHPMailer");
-
-
-$mail = new PHPMailer();
-
-try{
-        $mail -> isSMTP();
-        
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*
 $nombre = $_POST['nombre'];
 $telefono = $_POST['telefono'];
 $correo = $_POST['correo'];
@@ -35,29 +13,53 @@ $message .= "Telefono :" . $telefono . " \r\n";
 $message .= "Mensaje: " . $_POST['mensaje'] . "\r\n";
 $message .= "Enviado el " . date('d/m/Y', time());
 
-$to = "soportesistema.jalisco@tomza.com";
-$subject = "Contacto página web jalisco";
-function Send_Mail($to,$subject,$body)
-{
-require 'class.phpmailer.php';
-$from       = $correo;
-$mail       = new PHPMailer();
-$mail->IsSMTP(true);            // use SMTP
-$mail->IsHTML(true);
-$mail->SMTPAuth   = true;                  // enable SMTP authentication
-$mail->Host       = "smtp.gmail.com"; // SMTP host
-$mail->Port       =  465;                    // set the SMTP port
-$mail->Username   = "sistemas.tomza.gdl@gmail.com";  // SMTP  username
-$mail->Password   = "m0n0u5u4r10";  // SMTP password
-$mail->SetFrom($from, 'From Name');
-$mail->AddReplyTo($from,'From Name');
-$mail->Subject    = $subject;
-$body = $message;
-$mail->MsgHTML($body);
-$address = $to;
-$mail->AddAddress($address);
-$mail->Send(); 
-};
+include("Mailer/src/PHPMailer.php");
+include("Mailer/src/SMTP.php");
+include("Mailer/src/Exception.php");
+
+$fromemail = "soportesistenas.jalisco@tomza.com";
+$fromname = "Contacto página web";
+$host = "smtp.office365.com";
+$port = "587";
+$SMTPAuth = "login";
+$SMTPSecure = "ssl";
+$password = "Corp%Jalisco#128";
+$emailto = "sistemas.tomza.gdl@gmail.com";
+$subject = "Contacto página web Guadalajara";
+
+$mail = new PHPMailer\PHPMailer\PHPMailer();
+
+try{
+  $mail-> isSMTP(true);
+  $mail-> isHTML(true);
+  $mail-> SMTPdebug = 1;
+  $mail-> Host = $host; // SMTP host
+  $mail-> Port = $port; // set the SMTP port
+  $mail-> SMTPAuth = true; 
+  $mail-> SMTPSecure = $SMTPSecure; 
+  $mail-> Username = $fromemail;
+  $mail-> Password = $password;
+
+  $mail-> setFrom($fromemail, $fromname)
+  $mail-> addAddress($emailto);
+
+  $mail->subject = $subject;
+  $mail->Body = $message;
+
+  if($mail->send()){
+        echo'<script type="text/javascript">
+        alert("Mensaje enviado");
+        window.location.href="/";
+        </script>';
+  }
+        echo'<script type="text/javascript">
+        alert("Error al enviar");
+        window.location.href="//";
+        </script>';
+}catch (Exception $e){
+  
+}
+*/
 echo'<script type="text/javascript">
         alert("Mensaje enviado");
         window.location.href="/";
