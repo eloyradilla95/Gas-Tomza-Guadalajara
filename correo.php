@@ -23,7 +23,7 @@ $host = "smtp.office365.com";
 $port = "587";
 $SMTPAuth = "login";
 $SMTPSecure = "ssl";
-$password = "Corp%Jalisco#128";
+$password = "";
 $emailto = "sistemas.tomza.gdl@gmail.com";
 $subject = "Contacto página web Guadalajara";
 
