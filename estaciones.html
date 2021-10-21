@@ -519,7 +519,11 @@
     <script src="js/jquery.flexslider.js"></script>
     <script type="text/javascript" charset="utf-8">
       $(window).load(function() {
-        $('.flexslider').flexslider();
+        $('.flexslider').flexslider({
+          touch: true,  
+          pauseOnAction: false,
+          pauseOnHover: false,
+        });
       });
     </script>
     <script src="js/modernizr.js"></script>
