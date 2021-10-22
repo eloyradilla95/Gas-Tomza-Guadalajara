@@ -13,9 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> <!--Fuente Monyserrat sans-->
     <link rel="preload" href="css/slider.css" as="style">
-    <link href="css/slider.css" rel="stylesheet">
+    <link href="css/slider.css" rel="stylesheet"> <!--Slider-->
     <link rel="preload" href="css/styles.css" as="style">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet"> <!--Hoja de estilos-->
 </head>
 <body>
   <header>
@@ -59,33 +59,35 @@
             <ul class="slides">
               <li>
                 <img src="img/slider/Guadalajara/Patria.jpg" alt="Estacion patria">
-                <section class="flex-caption">
-                  <p>
-                    Estación Patria 
-                  </p>
-                </section>
+                <div class="flex-caption">
+                  <p class="estaciones__nombre">Est. Patria</p>
+                  <p class="estaciones__direccion">Av. Patria y Mario Gómez Nuñes, Col 5 de Mayo 2da Sec.</p>
+                  <a class="estaciones__ubicacion" href="https://www.google.com.mx/maps/place/20%C2%B037'12.1%22N+103%C2%B021'20.6%22W/@20.6200278,-103.3579109,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d20.620028!4d-103.355732" target="_black">Ubicación</a>
+                </div>
               </li>
               <li>
                 <img src="img/slider/Guadalajara/Olimpica_1.jpg" alt="Estacion Olimpica 1">
-                <section class="flex-caption">
-                  <p>
-                    Estación Olimpica 1
-                  </p>
-                </section>
+                <div class="flex-caption">
+                  <p class="estaciones__nombre">Est. Olimpica 1</p>
+                  <p class="estaciones__direccion">Calz. Olimpica # 1650 Col. Quinta Velarde</p>    
+                  <a class="estaciones__ubicacion" href="https://www.google.com.mx/maps/place/Gas+Tomza/@20.651666,-103.3361256,20z/data=!4m5!3m4!1s0x8428b2162bc4b3cb:0xb916134a70a414ac!8m2!3d20.6517406!4d-103.335841?hl=es" target="_black">Ubicación</a>
+                </div>
               </li>
               <li>
                 <img src="img/slider/Guadalajara/Olimpica_2.JPG" alt="Estacion Olimpica 2">
-                <section class="flex-caption">
-                  <p>
-                    Estación Olimpica 2
-                  </p>
-                </section>
+                <div class="flex-caption">
+                  <p class="estaciones__nombre">Est. Olimpica 2</p>
+                  <p class="estaciones__direccion">Calz. Olimpica # 1244 Entre Río Nilo y Río Verde Col. Quinta Velarde</p>    
+                  <a class="estaciones__ubicacion" href="https://www.google.com.mx/maps/place/Gas+Tomza/@20.6518314,-103.3295694,21z/data=!4m5!3m4!1s0x8428b3d2a0b06283:0x3202300d1e598c7d!8m2!3d20.6518577!4d-103.3294839?hl=es" target="_black">Ubicación</a>
+                </div>
               </li>
               <li>
                 <img src="img/slider/Guadalajara/Las_juntas.JPG" alt="Estacion Las Juntas">
-                <section class="flex-caption">
-                  Estación Las Juntas
-                </section>
+                <div class="flex-caption">
+                  <p class="estaciones__nombre">Est. Las Juntas</p>
+                  <p class="estaciones__direccion">Rivera #4619 Col. Las Juntas Guadalajara, Jal. Al cruce con bajío 36-A</p>  
+                  <a class="estaciones__ubicacion" href="https://www.google.com/maps/place/20%C2%B036'50.3%22N+103%C2%B020'06.2%22W/@20.6139722,-103.3372443,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d20.6139753!4d-103.3350527?hl=es" target="_black">Ubicación</a>
+                </div>
               </li>
             </ul>
           </div>
@@ -506,6 +508,12 @@
         </picture>
         
       </a>
+      <a href="https://play.google.com/store/apps/details?id=com.tomza.jalisco" target="_black">
+        <picture>
+          <img src="/img/icon/App1.jpg" title="Descarga nuestra App" alt="Contacto">
+        </picture>
+        
+      </a>
       <a href="tel:3330012222">
         <picture>
           <source srcset="/img/icon/CONTACTO_1.webp" title="Realizar llamada" alt="Contacto" type="image/webp">
@@ -522,7 +530,7 @@
         $('.flexslider').flexslider({
           touch: true,  
           pauseOnAction: false,
-          pauseOnHover: false,
+          pauseOnHover: false
         });
       });
     </script>

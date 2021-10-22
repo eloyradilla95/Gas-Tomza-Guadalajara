@@ -370,7 +370,7 @@ h1,h2,h3 {
 
 .estaciones__ubicacion{
     text-decoration: none;
-    color: var(--oscuro);
+    color: var(--primario);
     font-weight:bold;
 }
 
