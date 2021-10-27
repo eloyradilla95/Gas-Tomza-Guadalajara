@@ -654,3 +654,5 @@ $.fn[plugin] = function(option, args) {
 $.fn[plugin].fx = {};
 
 })(this, jQuery);
+
+$('#slides').superslides();
