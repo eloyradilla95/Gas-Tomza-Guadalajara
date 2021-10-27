@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> <!--Fuente Monyserrat sans-->
     <link rel="preload" href="css/slider.css" as="style">
     <link href="css/slider.css" rel="stylesheet"> <!--Slider-->
+    <link rel="preload" href="/img/icon/iconos/style.css" as="style">
+    <link href="/img/icon/iconos/style.css" rel="stylesheet"> <!--Hoja de iconos-->
     <link rel="preload" href="css/styles.css" as="style">
     <link href="css/styles.css" rel="stylesheet"> <!--Hoja de estilos-->
 </head>
@@ -54,7 +56,7 @@
     <!--Estaciones-->
     <main class="contenedor sombra">
     <p class="titulo-estaciones">Guadalajara</p>
-      <!--<div class="container">-->
+      <div class="container"><!--Contenedor-->
           <div id="slides">
             <ul class="slides-container">
               <li>
@@ -91,11 +93,11 @@
               </li>
             </ul>
             <nav class="slides-navigation">
-              <a href="#" class="prev"> <img src="/img/icon/Left.png" alt="Left"></a>
-              <a href="#" class="next"> <img src="/img/icon/Right.png" alt="Right"></a>
+              <a href="#" class="prev icon-chevron-thin-left"></a>
+              <a href="#" class="next icon-chevron-thin-right"></a>
             </nav>
           </div>
-      <!--</div> grid-->
+        </div> <!--contenedor-->
         <p class="titulo-estaciones">Zapopan</p>  
       <div class="grid">
           <div class="estaciones">
@@ -529,6 +531,7 @@
     </div>
     <script src="js/jquery.js"></script>
     <script src="js/jquery.superslides.js"></script>
+    <script>$('#slides').superslides();</script>
     <script src="js/modernizr.js"></script>
 </body>
 </html>
