@@ -10,7 +10,7 @@ slider.insertAdjacentElement('afterbegin', sliderSectionLast);
 function Next(){
     let sliderSectionFirts = document.querySelectorAll(".slider__section")[0];
     slider.style.marginLeft = "-200%";
-    slider.style.transition = "all 0.5s";
+    slider.style.transition = "all 0.5s"; //Tiempo de transicion entre imagenes
     setTimeout(function(){
         slider.style.transition = "none";
         slider.insertAdjacentElement('beforeend', sliderSectionFirts);
@@ -18,6 +18,28 @@ function Next(){
     }, 500);
 }
 
+function Prev(){
+    let sliderSection = document.querySelectorAll(".slider__section");
+    let sliderSectionLast = sliderSection[sliderSection.length -1];
+    slider.style.marginLeft = "0";
+    slider.style.transition = "all 0.5s"; //tiempo de transicion entre imagenes
+    setTimeout(function(){
+        slider.style.transition = "none";
+        slider.insertAdjacentElement('afterbegin', sliderSectionLast);
+        slider.style.marginLeft = "-100%";
+    }, 500);
+}
+
 btnRight.addEventListener('click', function(){
     Next();
 });
+
+btnLeft.addEventListener('click', function(){
+    Prev();
+});
+
+//Funcion de movimiento automatico
+
+setInterval(function(){
+    Next();
+}, 10000);

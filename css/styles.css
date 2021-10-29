@@ -353,27 +353,6 @@ h1,h2,h3 {
     
 }
 
-.estaciones__informacion{
-  margin: 1rem 0;
-}
-
-.estaciones__nombre{
-    font-size: 3rem;
-    font-weight:bold;
-    
-}
-
-.estaciones__direccion{
-    font-size: 2rem;
-    line-height: 1.2;
-}
-
-.estaciones__ubicacion{
-    text-decoration: none;
-    color: var(--primario);
-    font-weight:bold;
-}
-
 /*Imagen de fondo e informacion*/
 
 .info{
