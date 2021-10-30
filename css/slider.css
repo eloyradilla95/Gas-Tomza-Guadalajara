@@ -245,7 +245,7 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
     padding: 5px;
     bottom: 10px;
     left: 10px;
-    right: 10px;
+    right: 75px;
     z-index: 1000;
 
     background: rgba(0, 0, 0, 0.8);
