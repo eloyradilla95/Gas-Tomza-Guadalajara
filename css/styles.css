@@ -340,19 +340,6 @@ h1,h2,h3 {
     overflow: hidden;  
 }
 
-
-.estaciones__imagen{
-    width: 100%;
-    height: auto;
-    transition: all 1000ms ease-in-out ;
-}
-
-.estaciones__imagen:hover{
-    
-    transform: scale(1.2);
-    
-}
-
 /*Imagen de fondo e informacion*/
 
 .info{
