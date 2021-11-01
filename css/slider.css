@@ -181,11 +181,15 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
 /*esto define cuantas imagenes tendra el slider*/
 
 .slider-Guadalajara{
-  width: 400%;
+  width: 500%;
 }
 
 .slider-Zapopan{
-  width: 900%;
+  width: 800%;
+}
+
+.slider-Tlaquepaque{
+  width: 500%;
 }
 
 .slider__section{

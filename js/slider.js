@@ -39,7 +39,8 @@ btnLeft.addEventListener('click', function(){
 });
 
 //Funcion de movimiento automatico
-
+/* 
 setInterval(function(){
     Next();
 }, 10000);
+*/
