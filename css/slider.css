@@ -181,18 +181,78 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
 /*esto define cuantas imagenes tendra el slider*/
 
 .slider-Guadalajara{
-  width: 500%;
+  width: 400%;
 }
 
 .slider-Zapopan{
-  width: 800%;
+  width: 900%;
 }
 
 .slider-Tlaquepaque{
   width: 500%;
 }
 
+.slider-Tonala{
+  width: 1400%;
+}
+
+.slider-Tlajomulco{
+  width: 400%;
+}
+
+.slider-Elsalto{
+  width: 1100%;
+}
+
+.slider-Ixt{
+  width: 200%;
+}
+
+.slider-Laja{
+  width: 300%;
+}
+
 .slider__section{
+  width: 100%;
+  position: relative;
+}
+
+.slider__section-Guadalajara{
+  width: 100%;
+  position: relative;
+}
+
+.slider__section-Zapopan{
+  width: 100%;
+  position: relative;
+}
+
+.slider__section-Tlaquepaque{
+  width: 100%;
+  position: relative;
+}
+
+.slider__section-Tonala{
+  width: 100%;
+  position: relative;
+}
+
+.slider__section-Tlajomulco{
+  width: 100%;
+  position: relative;
+}
+
+.slider__section-Elsalto{
+  width: 100%;
+  position: relative;
+}
+
+.slider__section-Ixt{
+  width: 100%;
+  position: relative;
+}
+
+.slider__section-Laja{
   width: 100%;
   position: relative;
 }
