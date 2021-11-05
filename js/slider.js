@@ -12,7 +12,7 @@ slider_Guadalajara.insertAdjacentElement('afterbegin', sliderSectionLast_Guadala
 function Next_Guadalajara(){
     let sliderSectionFirts_Guadalajara = document.querySelectorAll(".slider__section-Guadalajara")[0];
     slider_Guadalajara.style.marginLeft = "-200%";
-    slider_Guadalajara.style.transition = "all 2s"; //Tiempo de transicion entre imagenes
+    slider_Guadalajara.style.transition = "all 2s ease-in"; //Tiempo de transicion entre imagenes
     setTimeout(function(){
         slider_Guadalajara.style.transition = "none";
         slider_Guadalajara.insertAdjacentElement('beforeend', sliderSectionFirts_Guadalajara);
@@ -24,12 +24,12 @@ function Prev_Guadalajara(){
     let sliderSection_Guadalajara = document.querySelectorAll(".slider__section-Guadalajara");
     let sliderSectionLast_Guadalajara = sliderSection_Guadalajara[sliderSection_Guadalajara.length -1];
     slider_Guadalajara.style.marginLeft = "0";
-    slider_Guadalajara.style.transition = "all 2s"; //tiempo de transicion entre imagenes
+    slider_Guadalajara.style.transition = "all 3s ease-in"; //tiempo de transicion entre imagenes
     setTimeout(function(){
         slider_Guadalajara.style.transition = "none";
         slider_Guadalajara.insertAdjacentElement('afterbegin', sliderSectionLast_Guadalajara);
         slider_Guadalajara.style.marginLeft = "-100%";
-    }, 2000); //Tiempo de transicion entre imagenes
+    }, 3000); //Tiempo de transicion entre imagenes
 }
 
 btnRight_Guadalajara.addEventListener('click', function(){

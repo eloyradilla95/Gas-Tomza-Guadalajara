@@ -366,7 +366,7 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
     -moz-transition: all 300ms;
     -o-transition: all 300ms;
     -ms-transition: all 300ms;
-    transition: all 300ms;
+     transition: all 300ms;
   }
 
   .estaciones_informacion{
