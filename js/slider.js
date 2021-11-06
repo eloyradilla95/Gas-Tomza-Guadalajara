@@ -54,7 +54,7 @@ slider_Zapopan.insertAdjacentElement('afterbegin', sliderSectionLast_Zapopan);
 function Next_Zapopan(){
     let sliderSectionFirts_Zapopan = document.querySelectorAll(".slider__section-Zapopan")[0];
     slider_Zapopan.style.marginLeft = "-200%";
-    slider_Zapopan.style.transition = "all 2s"; //Tiempo de transicion entre imagenes
+    slider_Zapopan.style.transition = "all 2s ease-in"; //Tiempo de transicion entre imagenes
     setTimeout(function(){
         slider_Zapopan.style.transition = "none";
         slider_Zapopan.insertAdjacentElement('beforeend', sliderSectionFirts_Zapopan);
@@ -66,7 +66,7 @@ function Prev_Zapopan(){
     let sliderSection_Zapopan = document.querySelectorAll(".slider__section-Zapopan");
     let sliderSectionLast_Zapopan = sliderSection_Zapopan[sliderSection_Zapopan.length -1];
     slider_Zapopan.style.marginLeft = "0";
-    slider_Zapopan.style.transition = "all 2s"; //tiempo de transicion entre imagenes
+    slider_Zapopan.style.transition = "all 2s ease-in"; //tiempo de transicion entre imagenes
     setTimeout(function(){
         slider_Zapopan.style.transition = "none";
         slider_Zapopan.insertAdjacentElement('afterbegin', sliderSectionLast_Zapopan);
@@ -96,7 +96,7 @@ slider_Tlaquepaque.insertAdjacentElement('afterbegin', sliderSectionLast_Tlaquep
 function Next_Tlaquepaque(){
     let sliderSectionFirts_Tlaquepaque = document.querySelectorAll(".slider__section-Tlaquepaque")[0];
     slider_Tlaquepaque.style.marginLeft = "-200%";
-    slider_Tlaquepaque.style.transition = "all 2s"; //Tiempo de transicion entre imagenes
+    slider_Tlaquepaque.style.transition = "all 2s ease-in"; //Tiempo de transicion entre imagenes
     setTimeout(function(){
         slider_Tlaquepaque.style.transition = "none";
         slider_Tlaquepaque.insertAdjacentElement('beforeend', sliderSectionFirts_Tlaquepaque);
@@ -108,7 +108,7 @@ function Prev_Tlaquepaque(){
     let sliderSection_Tlaquepaque = document.querySelectorAll(".slider__section-Tlaquepaque");
     let sliderSectionLast_Tlaquepaque = sliderSection_Tlaquepaque[sliderSection_Tlaquepaque.length -1];
     slider_Tlaquepaque.style.marginLeft = "0";
-    slider_Tlaquepaque.style.transition = "all 2s"; //tiempo de transicion entre imagenes
+    slider_Tlaquepaque.style.transition = "all 2s ease-in"; //tiempo de transicion entre imagenes
     setTimeout(function(){
         slider_Tlaquepaque.style.transition = "none";
         slider_Tlaquepaque.insertAdjacentElement('afterbegin', sliderSectionLast_Tlaquepaque);
@@ -138,7 +138,7 @@ slider_Tonala.insertAdjacentElement('afterbegin', sliderSectionLast_Tonala);
 function Next_Tonala(){
     let sliderSectionFirts_Tonala = document.querySelectorAll(".slider__section-Tonala")[0];
     slider_Tonala.style.marginLeft = "-200%";
-    slider_Tonala.style.transition = "all 2s"; //Tiempo de transicion entre imagenes
+    slider_Tonala.style.transition = "all 2s ease-in"; //Tiempo de transicion entre imagenes
     setTimeout(function(){
         slider_Tonala.style.transition = "none";
         slider_Tonala.insertAdjacentElement('beforeend', sliderSectionFirts_Tonala);
@@ -150,7 +150,7 @@ function Prev_Tonala(){
     let sliderSection_Tonala = document.querySelectorAll(".slider__section-Tonala");
     let sliderSectionLast_Tonala = sliderSection_Tonala[sliderSection_Tonala.length -1];
     slider_Tonala.style.marginLeft = "0";
-    slider_Tonala.style.transition = "all 2s"; //tiempo de transicion entre imagenes
+    slider_Tonala.style.transition = "all 2s ease-in"; //tiempo de transicion entre imagenes
     setTimeout(function(){
         slider_Tonala.style.transition = "none";
         slider_Tonala.insertAdjacentElement('afterbegin', sliderSectionLast_Tonala);
@@ -180,7 +180,7 @@ slider_Tlajomulco.insertAdjacentElement('afterbegin', sliderSectionLast_Tlajomul
 function Next_Tlajomulco(){
     let sliderSectionFirts_Tlajomulco = document.querySelectorAll(".slider__section-Tlajomulco")[0];
     slider_Tlajomulco.style.marginLeft = "-200%";
-    slider_Tlajomulco.style.transition = "all 2s"; //Tiempo de transicion entre imagenes
+    slider_Tlajomulco.style.transition = "all 2s ease-in"; //Tiempo de transicion entre imagenes
     setTimeout(function(){
         slider_Tlajomulco.style.transition = "none";
         slider_Tlajomulco.insertAdjacentElement('beforeend', sliderSectionFirts_Tlajomulco);
@@ -192,7 +192,7 @@ function Prev_Tlajomulco(){
     let sliderSection_Tlajomulco = document.querySelectorAll(".slider__section-Tlajomulco");
     let sliderSectionLast_Tlajomulco = sliderSection_Tlajomulco[sliderSection_Tlajomulco.length -1];
     slider_Tlajomulco.style.marginLeft = "0";
-    slider_Tlajomulco.style.transition = "all 2s"; //tiempo de transicion entre imagenes
+    slider_Tlajomulco.style.transition = "all 2s ease-in"; //tiempo de transicion entre imagenes
     setTimeout(function(){
         slider_Tlajomulco.style.transition = "none";
         slider_Tlajomulco.insertAdjacentElement('afterbegin', sliderSectionLast_Tlajomulco);
@@ -222,7 +222,7 @@ slider_Elsalto.insertAdjacentElement('afterbegin', sliderSectionLast_Elsalto);
 function Next_Elsalto(){
     let sliderSectionFirts_Elsalto = document.querySelectorAll(".slider__section-Elsalto")[0];
     slider_Elsalto.style.marginLeft = "-200%";
-    slider_Elsalto.style.transition = "all 2s"; //Tiempo de transicion entre imagenes
+    slider_Elsalto.style.transition = "all 2s ease-in"; //Tiempo de transicion entre imagenes
     setTimeout(function(){
         slider_Elsalto.style.transition = "none";
         slider_Elsalto.insertAdjacentElement('beforeend', sliderSectionFirts_Elsalto);
@@ -234,7 +234,7 @@ function Prev_Elsalto(){
     let sliderSection_Elsalto = document.querySelectorAll(".slider__section-Elsalto");
     let sliderSectionLast_Elsalto = sliderSection_Elsalto[sliderSection_Elsalto.length -1];
     slider_Elsalto.style.marginLeft = "0";
-    slider_Elsalto.style.transition = "all 2s"; //tiempo de transicion entre imagenes
+    slider_Elsalto.style.transition = "all 2s ease-in"; //tiempo de transicion entre imagenes
     setTimeout(function(){
         slider_Elsalto.style.transition = "none";
         slider_Elsalto.insertAdjacentElement('afterbegin', sliderSectionLast_Elsalto);
@@ -264,7 +264,7 @@ slider_Ixt.insertAdjacentElement('afterbegin', sliderSectionLast_Ixt);
 function Next_Ixt(){
     let sliderSectionFirts_Ixt = document.querySelectorAll(".slider__section-Ixt")[0];
     slider_Ixt.style.marginLeft = "-200%";
-    slider_Ixt.style.transition = "all 2s"; //Tiempo de transicion entre imagenes
+    slider_Ixt.style.transition = "all 2s ease-in"; //Tiempo de transicion entre imagenes
     setTimeout(function(){
         slider_Ixt.style.transition = "none";
         slider_Ixt.insertAdjacentElement('beforeend', sliderSectionFirts_Ixt);
@@ -276,7 +276,7 @@ function Prev_Ixt(){
     let sliderSection_Ixt = document.querySelectorAll(".slider__section-Ixt");
     let sliderSectionLast_Ixt = sliderSection_Ixt[sliderSection_Ixt.length -1];
     slider_Ixt.style.marginLeft = "0";
-    slider_Ixt.style.transition = "all 2s"; //tiempo de transicion entre imagenes
+    slider_Ixt.style.transition = "all 2s ease-in"; //tiempo de transicion entre imagenes
     setTimeout(function(){
         slider_Ixt.style.transition = "none";
         slider_Ixt.insertAdjacentElement('afterbegin', sliderSectionLast_Ixt);
@@ -306,7 +306,7 @@ slider_Laja.insertAdjacentElement('afterbegin', sliderSectionLast_Laja);
 function Next_Laja(){
     let sliderSectionFirts_Laja = document.querySelectorAll(".slider__section-Laja")[0];
     slider_Laja.style.marginLeft = "-200%";
-    slider_Laja.style.transition = "all 2s"; //Tiempo de transicion entre imagenes
+    slider_Laja.style.transition = "all 2s ease-in"; //Tiempo de transicion entre imagenes
     setTimeout(function(){
         slider_Laja.style.transition = "none";
         slider_Laja.insertAdjacentElement('beforeend', sliderSectionFirts_Laja);
@@ -318,7 +318,7 @@ function Prev_Laja(){
     let sliderSection_Laja = document.querySelectorAll(".slider__section-Laja");
     let sliderSectionLast_Laja = sliderSection_Laja[sliderSection_Laja.length -1];
     slider_Laja.style.marginLeft = "0";
-    slider_Laja.style.transition = "all 2s"; //tiempo de transicion entre imagenes
+    slider_Laja.style.transition = "all 2s ease-in"; //tiempo de transicion entre imagenes
     setTimeout(function(){
         slider_Laja.style.transition = "none";
         slider_Laja.insertAdjacentElement('afterbegin', sliderSectionLast_Laja);
