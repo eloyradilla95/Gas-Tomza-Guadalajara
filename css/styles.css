@@ -288,6 +288,25 @@ h1,h2,h3 {
     max-width: 100%;
 }
 
+.upload{
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
+}
+
+.show_me_above{
+    animation: show 2s;
+}
+
+@keyframes show{
+    0%{
+        transform: translateY(60px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
 /*Estaciones*/
 
 .grid{
