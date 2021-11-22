@@ -290,7 +290,7 @@ h1,h2,h3 {
 
 .upload{
     opacity: 0;
-    transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 1s;
 }
 
 .show_me_above{
@@ -299,7 +299,7 @@ h1,h2,h3 {
 
 @keyframes show{
     0%{
-        transform: translateY(60px);
+        transform: translateY(70px);
     }
 
     100%{
