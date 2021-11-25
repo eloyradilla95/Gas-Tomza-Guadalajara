@@ -48,7 +48,7 @@ body{
     font-family: var(--fuentelight); /* fuente principal del proyecto*/
     /*background-image: linear-gradient(to top,var(--shocking) 0%, var(--secundario) 100%);*/
     background-color: var(--secundario);
-    height: auto;
+    
 }
 
 .contenedor{
