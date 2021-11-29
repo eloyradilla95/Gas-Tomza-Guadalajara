@@ -609,6 +609,7 @@ h1,h2,h3 {
     border-radius: 50%;
     z-index: 1000;
   }
+
   @media (min-width: 768px) {
     
     .snow-long{
@@ -4517,3 +4518,5 @@ h1,h2,h3 {
       transform: translate(18.3917vw, 500vh) scale(0.8008);
     }
   }
+
+  
