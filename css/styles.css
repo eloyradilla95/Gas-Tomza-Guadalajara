@@ -52,6 +52,20 @@ body{
     overflow-x: hidden;
 }
 
+@media (max-width: 480px) {
+  .body{
+    height: auto;
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 480px) {
+  .body{
+    height: auto;
+    overflow-x: hidden;
+  }  
+}
+
 .contenedor{
     /*max-width toma el rango como maximo y solo si esta
       disponible, si no toma el 100% que se toma por defecto
